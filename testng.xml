@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Xalts-Assignment">
+    
+    <listeners>
+        <listener class-name="com.xalts.test.assignment_xalts_utility.ListenerClass"/>
+    </listeners>
+    
+    <parameter name="browser" value="Chrome"/>
+    
+    <test thread-count="5" name="Tests">
+        <classes>
+            <class name="com.xalts.tst.assignment_xalts_TestCases.HomePageTest"/>
+            <class name="com.xalts.tst.assignment_xalts_TestCases.SignUpTest"/>
+            <class name="com.xalts.tst.assignment_xalts_TestCases.SignInTest"/>
+            <class name="com.xalts.tst.assignment_xalts_TestCases.SignOutTest"/>
+            
+        </classes>
+    </test> <!-- Tests -->
+</suite> <!-- Xalts-Assignment -->
+
